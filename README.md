@@ -1,35 +1,50 @@
 # Space Defender
 
-**Space Defender** es un clon sencillo de “shoot ’em up” hecho con Python y Pygame.
+**Space Defender** es un sencillo shooter espacial creado con Python y Pygame. Tu nave debe eliminar oleadas de enemigos antes de que crucen la pantalla inferior. Evita que los enemigos escapen o perderás vidas. Gana puntos, sube de nivel y sobrevive el mayor tiempo posible.
 
-## 📋 Requisitos
-- Python 3.7+
-- [Pygame](https://www.pygame.org/):  
-  ```bash
-  pip install pygame
+---
 
-🚀 Cómo jugar
-Ejecuta python main.py.
+## 📋 Contenidos
 
-En el menú, selecciona Jugar (con teclado o clic del ratón).
+- [Space Defender](#space-defender)
+  - [📋 Contenidos](#-contenidos)
+  - [Demo](#demo)
+  - [Características](#características)
+  - [Requisitos](#requisitos)
+  - [Instalación](#instalación)
 
-Mueve tu nave con ← →, dispara con Espacio.
+---
 
-Presiona P para pausar.
+## Demo
 
-Gana 10 puntos por cada enemigo destruido.
+![Menú principal](./screenshots/menu.png)  
+![Gameplay](./screenshots/gameplay.png)  
 
-Al llegar a 50 puntos subirás al nivel 2, a 100 puntos al 3, etc.
+---
 
-📂 Estructura de funciones
-init_pygame(): inicializa la pantalla.
+## Características
 
-show_main_menu(): menú principal con teclado y ratón.
+- 🎮 **Menú principal interactivo** (teclado + ratón).  
+- ⏸️ **Pausa** con la tecla **P**.  
+- 💥 **Disparo** con **Espacio** y movimiento con **← →**.  
+- 👾 **Oleadas de enemigos** con velocidad creciente.  
+- 🚀 **Progresión de niveles** por puntos o al terminar cada oleada.  
+- ❤️ **Sistema de vidas**: pierdes una vida cada vez que un enemigo escapa.  
+- 💀 **Pantalla de Game Over** con puntuación final.  
+- 📝 Código organizado en funciones y clases.
 
-play_game(): bucle principal de juego, gestiona niveles, disparos y colisiones.
+---
 
-show_pause_menu(): pausa el juego hasta presionar P.
+## Requisitos
 
-spawn_enemies(): crea n enemigos con velocidad creciente.
+- Python 3.8+  
+- [Pygame 2.6+](https://www.pygame.org/)  
 
-Clase Enemy: objeto sprite que baja desde arriba.
+---
+
+## Instalación
+
+1. **Clona este repositorio**  
+   ```bash
+   git clone https://github.com/JorgeSegura1/Space-Defender
+   cd space-defender
